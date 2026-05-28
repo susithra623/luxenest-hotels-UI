@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>LuxeNest – Luxury Destinations</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+  rel="stylesheet"/>
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+
+
+<!-- ══════════════════ LANGUAGE BAR ══════════════════ -->
+<div id="lang-bar">
+  <span>Language:</span>
+
+  <select class="lang-select">
+    <option value="en">English</option>
+    <option value="hi">हिंदी</option>
+    <option value="ta">தமிழ்</option>
+    <option value="te">తెలుగు</option>
+    <option value="fr">French</option>
+    <option value="ar">عربي</option>
+    <option value="zh">中文</option>
+  </select>
+</div>
+
+
+<!-- ══════════════════ NAVBAR ══════════════════ -->
+<nav id="navbar">
+
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-text">LUXENEST</span>
+  </a>
+
+  <input type="checkbox" id="menu-toggle"/>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="destination.html">DESTINATIONS</a></li>
+    <li><a href="hotels.html">HOTELS</a></li>
+    <li><a href="deals.html">DEALS</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="reviews.html">REVIEWS</a></li>
+  </ul>
+
+  <a href="hotels.html" class="nav-cta">BOOK NOW</a>
+
+  <label class="nav-hamburger" for="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+</nav>
+
+
+<!-- ══════════════════ DESTINATIONS ══════════════════ -->
+<section id="destinations">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">✦ EXPLORE BY INTEREST ✦</span>
+      <h2 class="section-title">Find Your <span class="gold">Perfect</span> Escape</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- CSS tab radios -->
+    <input class="tab-radio" type="radio" name="dest-tab" id="tab-all" checked/>
+    <input class="tab-radio" type="radio" name="dest-tab" id="tab-beach"/>
+    <input class="tab-radio" type="radio" name="dest-tab" id="tab-mountain"/>
+    <input class="tab-radio" type="radio" name="dest-tab" id="tab-heritage"/>
+    <input class="tab-radio" type="radio" name="dest-tab" id="tab-wildlife"/>
+    <input class="tab-radio" type="radio" name="dest-tab" id="tab-wellness"/>
+    <input class="tab-radio" type="radio" name="dest-tab" id="tab-city"/>
+
+    <div class="interest-tabs">
+      <label class="int-tab" for="tab-all">All</label>
+      <label class="int-tab" for="tab-beach">🏖️ Beach</label>
+      <label class="int-tab" for="tab-mountain">🏔️ Mountain</label>
+      <label class="int-tab" for="tab-heritage">🏰 Heritage</label>
+      <label class="int-tab" for="tab-wildlife">🦁 Wildlife</label>
+      <label class="int-tab" for="tab-wellness">🧘 Wellness</label>
+      <label class="int-tab" for="tab-city">🌆 City</label>
+    </div>
+
+    <div class="dest-grid">
+      <!-- Goa – beach -->
+      <div class="dest-card" data-cat="beach">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80" alt="Goa" loading="lazy"/>
+        <div class="dest-overlay">
+          <div class="dest-badge">Trending</div>
+          <div class="dest-city">Goa</div>
+          <div class="dest-state">Goa</div>
+          <div class="dest-meta">
+            <span><i class="fas fa-hotel"></i> 48 Hotels</span>
+            <span><i class="fas fa-rupee-sign"></i> From ₹6,500</span>
+          </div>
+        </div>
+        <div class="dest-hover">
+          <div class="dest-hover-title">Goa</div>
+          <p>Sun-kissed beaches, vibrant nightlife and Portuguese charm await you.</p>
+          <a href="#hotels" class="dest-hover-btn">EXPLORE HOTELS</a>
+        </div>
+      </div>
+
+      <!-- Jaipur – heritage -->
+      <div class="dest-card" data-cat="heritage">
+        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=600&q=80" alt="Jaipur" loading="lazy"/>
+        <div class="dest-overlay">
+          <div class="dest-badge">Royal</div>
+          <div class="dest-city">Jaipur</div>
+          <div class="dest-state">Rajasthan</div>
+          <div class="dest-meta">
+            <span><i class="fas fa-hotel"></i> 62 Hotels</span>
+            <span><i class="fas fa-rupee-sign"></i> From ₹5,800</span>
+          </div>
+        </div>
+        <div class="dest-hover">
+          <div class="dest-hover-title">Jaipur</div>
+          <p>The Pink City — where royal grandeur and Mughal architecture enchant every sense.</p>
+          <a href="#hotels" class="dest-hover-btn">EXPLORE HOTELS</a>
+        </div>
+      </div>
+
+      <!-- Udaipur – heritage -->
+      <div class="dest-card" data-cat="heritage">
+        <img src="https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?w=600&q=80" alt="Udaipur" loading="lazy"/>
+        <div class="dest-overlay">
+          <div class="dest-badge">Romantic</div>
+          <div class="dest-city">Udaipur</div>
+          <div class="dest-state">Rajasthan</div>
+          <div class="dest-meta">
+            <span><i class="fas fa-hotel"></i> 34 Hotels</span>
+            <span><i class="fas fa-rupee-sign"></i> From ₹7,200</span>
+          </div>
+        </div>
+        <div class="dest-hover">
+          <div class="dest-hover-title">Udaipur</div>
+          <p>City of Lakes where palace hotels float dreamlike above shimmering waters.</p>
+          <a href="#hotels" class="dest-hover-btn">EXPLORE HOTELS</a>
+        </div>
+      </div>
+
+      <!-- Shimla – mountain -->
+      <div class="dest-card" data-cat="mountain">
+        <img src="https://images.unsplash.com/photo-1591019478786-2c90b1e47748?w=600&q=80" alt="Shimla" loading="lazy"/>
+        <div class="dest-overlay">
+          <div class="dest-badge">Cool</div>
+          <div class="dest-city">Shimla</div>
+          <div class="dest-state">Himachal Pradesh</div>
+          <div class="dest-meta">
+            <span><i class="fas fa-hotel"></i> 29 Hotels</span>
+            <span><i class="fas fa-rupee-sign"></i> From ₹4,500</span>
+          </div>
+        </div>
+        <div class="dest-hover">
+          <div class="dest-hover-title">Shimla</div>
+          <p>Colonial hill station wrapped in pine forests and Himalayan panoramas.</p>
+          <a href="#hotels" class="dest-hover-btn">EXPLORE HOTELS</a>
+        </div>
+      </div>
+
+      <!-- Munnar – wellness -->
+      <div class="dest-card" data-cat="wellness">
+        <img src="https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=600&q=80" alt="Munnar" loading="lazy"/>
+        <div class="dest-overlay">
+          <div class="dest-badge">Serene</div>
+          <div class="dest-city">Munnar</div>
+          <div class="dest-state">Kerala</div>
+          <div class="dest-meta">
+            <span><i class="fas fa-hotel"></i> 22 Hotels</span>
+            <span><i class="fas fa-rupee-sign"></i> From ₹5,200</span>
+          </div>
+        </div>
+        <div class="dest-hover">
+          <div class="dest-hover-title">Munnar</div>
+          <p>Rolling tea gardens and misty mountain air for the ultimate wellness retreat.</p>
+          <a href="#hotels" class="dest-hover-btn">EXPLORE HOTELS</a>
+        </div>
+      </div>
+
+      <!-- Ranthambore – wildlife -->
+      <div class="dest-card" data-cat="wildlife">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Ranthambore" loading="lazy"/>
+        <div class="dest-overlay">
+          <div class="dest-badge">Adventure</div>
+          <div class="dest-city">Ranthambore</div>
+          <div class="dest-state">Rajasthan</div>
+          <div class="dest-meta">
+            <span><i class="fas fa-hotel"></i> 18 Hotels</span>
+            <span><i class="fas fa-rupee-sign"></i> From ₹8,900</span>
+          </div>
+        </div>
+        <div class="dest-hover">
+          <div class="dest-hover-title">Ranthambore</div>
+          <p>Witness royal Bengal tigers in their natural Rajasthani fortress habitat.</p>
+          <a href="#hotels" class="dest-hover-btn">EXPLORE HOTELS</a>
+        </div>
+      </div>
+
+      <!-- Mumbai – city -->
+      <div class="dest-card" data-cat="city">
+        <img src="https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=600&q=80" alt="Mumbai" loading="lazy"/>
+        <div class="dest-overlay">
+          <div class="dest-badge">Iconic</div>
+          <div class="dest-city">Mumbai</div>
+          <div class="dest-state">Maharashtra</div>
+          <div class="dest-meta">
+            <span><i class="fas fa-hotel"></i> 95 Hotels</span>
+            <span><i class="fas fa-rupee-sign"></i> From ₹9,500</span>
+          </div>
+        </div>
+        <div class="dest-hover">
+          <div class="dest-hover-title">Mumbai</div>
+          <p>The city that never sleeps — iconic skylines, Bollywood glamour and world-class dining.</p>
+          <a href="#hotels" class="dest-hover-btn">EXPLORE HOTELS</a>
+        </div>
+      </div>
+
+      <!-- Coorg – wellness -->
+      <div class="dest-card" data-cat="wellness">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Coorg" loading="lazy"/>
+        <div class="dest-overlay">
+          <div class="dest-badge">Nature</div>
+          <div class="dest-city">Coorg</div>
+          <div class="dest-state">Karnataka</div>
+          <div class="dest-meta">
+            <span><i class="fas fa-hotel"></i> 26 Hotels</span>
+            <span><i class="fas fa-rupee-sign"></i> From ₹4,800</span>
+          </div>
+        </div>
+        <div class="dest-hover">
+          <div class="dest-hover-title">Coorg</div>
+          <p>Scotland of India with misty coffee estates and cascading waterfalls.</p>
+          <a href="#hotels" class="dest-hover-btn">EXPLORE HOTELS</a>
+        </div>
+      </div>
+
+      <!-- Manali – mountain -->
+      <div class="dest-card" data-cat="mountain">
+        <img src="https://images.unsplash.com/photo-1472791108553-c9405341e398?w=600&q=80" alt="Manali" loading="lazy"/>
+        <div class="dest-overlay">
+          <div class="dest-badge">Snow</div>
+          <div class="dest-city">Manali</div>
+          <div class="dest-state">Himachal Pradesh</div>
+          <div class="dest-meta">
+            <span><i class="fas fa-hotel"></i> 38 Hotels</span>
+            <span><i class="fas fa-rupee-sign"></i> From ₹5,500</span>
+          </div>
+        </div>
+        <div class="dest-hover">
+          <div class="dest-hover-title">Manali</div>
+          <p>Snow-capped peaks, adventure sports and cozy mountain chalets await you.</p>
+          <a href="#hotels" class="dest-hover-btn">EXPLORE HOTELS</a>
+        </div>
+      </div>
+    </div><!-- /dest-grid -->
+  </div>
+</section>
+
+
+
+<!-- ══════════════════ NEWSLETTER ══════════════════ -->
+<div class="container" style="padding-bottom:90px;">
+
+  <div class="newsletter-wrap">
+
+    <h3>Join the LuxeNest Circle</h3>
+
+    <p>
+      Subscribe to receive exclusive offers,
+      early access to deals,
+      and curated travel inspiration.
+    </p>
+
+    <div class="newsletter-form">
+
+      <input type="email" placeholder="your@email.com"/>
+
+      <button type="button">
+        SUBSCRIBE
+      </button>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+
+  <div class="container">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+
+        <div class="footer-brand-name">
+          LUXENEST
+        </div>
+
+        <p>
+          Where Comfort Meets Elegance.
+          India's most trusted luxury hotel booking platform.
+        </p>
+
+        <div class="footer-socials">
+
+          <a href="#" class="social-btn">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="#" class="social-btn">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="#" class="social-btn">
+            <i class="fab fa-twitter"></i>
+          </a>
+
+          <a href="#" class="social-btn">
+            <i class="fab fa-youtube"></i>
+          </a>
+
+        </div>
+      </div>
+
+
+      <div class="footer-col">
+
+        <h4>QUICK LINKS</h4>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="deals.html">Deals</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h4>DESTINATIONS</h4>
+
+        <ul>
+          <li><a href="destination.html">Goa</a></li>
+          <li><a href="destination.html">Jaipur</a></li>
+          <li><a href="destination.html">Udaipur</a></li>
+          <li><a href="destination.html">Kerala</a></li>
+          <li><a href="destination.html">Shimla</a></li>
+        </ul>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h4>CONTACT</h4>
+
+        <ul class="footer-contact">
+
+          <li>
+            <i class="fas fa-phone"></i>
+            <span>+91 98765 43210</span>
+          </li>
+
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>hello@luxenest.in</span>
+          </li>
+
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Mumbai, Maharashtra, India</span>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>© 2025 LuxeNest. All rights reserved.</p>
+
+      <div class="footer-payment">
+
+        <span class="payment-icon">UPI</span>
+        <span class="payment-icon">VISA</span>
+        <span class="payment-icon">MC</span>
+        <span class="payment-icon">AMEX</span>
+        <span class="payment-icon">NET</span>
+
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ══════════════════ BOOKING MODAL ══════════════════ -->
+<div class="modal-overlay" id="bookingModal">
+
+  <div class="modal">
+
+    <div class="modal-header">
+
+      <span class="modal-title">
+        Book Your Stay
+      </span>
+
+      <a href="#" class="modal-close">
+        &times;
+      </a>
+
+    </div>
+
+    <img class="modal-hotel-img"
+    src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=700&q=80"
+    alt="Hotel"/>
+
+    <div class="modal-hotel-name">
+      LuxeNest Premium Stay
+    </div>
+
+    <div class="modal-form-grid">
+
+      <div class="modal-field">
+        <label>FULL NAME</label>
+        <input type="text" placeholder="Rahul Sharma"/>
+      </div>
+
+      <div class="modal-field">
+        <label>EMAIL</label>
+        <input type="email" placeholder="you@email.com"/>
+      </div>
+
+      <div class="modal-field">
+        <label>CHECK IN</label>
+        <input type="date"/>
+      </div>
+
+      <div class="modal-field">
+        <label>CHECK OUT</label>
+        <input type="date"/>
+      </div>
+
+      <div class="modal-field">
+        <label>GUESTS</label>
+
+        <select>
+          <option>1 Guest</option>
+          <option>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4+ Guests</option>
+        </select>
+      </div>
+
+      <div class="modal-field">
+        <label>ROOM TYPE</label>
+
+        <select>
+          <option>Deluxe Room</option>
+          <option>Premier Suite</option>
+          <option>Royal Suite</option>
+          <option>Presidential Suite</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="modal-price-box">
+
+      <div class="modal-price-row">
+        <span>Room (1 night)</span>
+        <span>₹12,500</span>
+      </div>
+
+      <div class="modal-price-row">
+        <span>Taxes & Fees (18%)</span>
+        <span>₹2,250</span>
+      </div>
+
+      <div class="modal-price-row total">
+        <span>TOTAL</span>
+        <span>₹14,750</span>
+      </div>
+
+    </div>
+
+    <button class="modal-book-btn">
+      CONFIRM BOOKING
+    </button>
+
+  </div>
+</div>
+
+
+<!-- ══════════════════ BACK TO TOP ══════════════════ -->
+<a id="backTop" href="#hotels">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+
+</body>
+</html>
